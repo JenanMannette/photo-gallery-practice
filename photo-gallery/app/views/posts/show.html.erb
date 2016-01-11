@@ -1,1 +1,8 @@
-show
+<h3><%= @post.title %></h3>
+<p><%= @post.user_name %></p>
+<p><%= @post.created_at.to_date.to_formatted_s(:long_ordinal) %></p>
+<p><%= link_to 'Edit', edit_post_path %></p>
+<p class="show-img-border"><%= image_tag @post.avatar.url(:medium) %></p>
+
+<%= link_to 'Back', root_path %> || <%= link_to 'Delete Post', @post, method: :delete, data: {confirm: 'Are you sure you want to delete?'} %>
+

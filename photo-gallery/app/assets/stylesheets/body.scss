@@ -1,0 +1,50 @@
+html {
+  font-family: verdana;
+  font-size: 13px;
+  text-align: center;
+}
+
+body {
+  background-color: rgba(149, 124, 143, 0.19);
+  padding: 30px;
+}
+
+td {
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ff7300;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  tr {
+    border: 1px solid black;
+  }
+}
+
+.add-new-post {
+  float: right;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #c1ffdf;
+}
+
+.home-page-title, h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+

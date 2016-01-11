@@ -1,6 +1,20 @@
-<p>POSTS:</p>
+<i class="fa fa-plus add-new-post"> <%= link_to 'Add New Post', new_post_path %></i>
 
-<% @posts.each do |p| %>
-    <%= p.title %><br>
-    <%= p.user_name %>
-<% end %>
+<p class="home-page-title">IMAGE GALLERY</p>
+
+<table>
+    <tbody>
+    <% @posts.each do |p| %>
+        <tr>
+                <td class="avatar-thumb">
+                    <%= link_to p do %>
+                        <%= image_tag p.avatar.url(:thumb) %>
+                    <% end %>
+                </td>
+                <td><%= p.title %></td>
+                <td><%= p.user_name %></td>
+                <td><%= p.created_at.to_date.to_formatted_s(:long_ordinal) %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>

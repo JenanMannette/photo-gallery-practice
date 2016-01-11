@@ -3,6 +3,14 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+
+#Font Awesome
+gem "font-awesome-rails"
+
+#PaperClip
+gem "paperclip", "3.4.2"
+gem 'aws-sdk'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
